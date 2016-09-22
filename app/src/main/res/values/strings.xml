@@ -1,3 +1,35 @@
+
 <resources>
-    <string name="app_name">FitPro</string>
+<string name="app_name">FitPro</string>
+<string name="info_txt">Application settings are listed below:</string>
+<string name="action_settings">Settings</string>
+<string-array name="pref_country_names">
+    <item>Finland</item>
+    <item>England</item>
+</string-array>
+<string-array name="pref_Wifi_scan_Interval">
+    <item>5  seconds</item>
+    <item>10 seconds</item>
+    <item>15 seconds</item>
+    <item>20 seconds</item>
+    <item>30 seconds</item>
+</string-array>
+<string-array name="pref_activity_scan_Interval">
+    <item>0  seconds</item>
+    <item>5  seconds</item>
+    <item>10 seconds</item>
+    <item>15 seconds</item>
+    <item>20 seconds</item>
+    <item>30 seconds</item>
+</string-array>
+<string-array name="pref_data_recording_Interval">
+    <item> 30 seconds</item>
+    <item> 60 seconds</item>
+    <item> 90 seconds</item>
+    <item>120 seconds</item>
+    <item>180 seconds</item>
+    <item>240 seconds</item>
+    <item>300 seconds</item>
+    <item>360 seconds</item>
+</string-array>
 </resources>
