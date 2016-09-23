@@ -90,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
                     fragmentTransaction.replace(R.id.containerView, new HelpFragment()).commit();
                     //Intent mapActIntent = new Intent(MainActivity.this, MapFullscreenActivity.class);
                     //startActivity(mapActIntent);
+                    Intent mapActIntent = new Intent(MainActivity.this, MapsActivity.class);
+                    startActivity(mapActIntent);
 
 
                 }
