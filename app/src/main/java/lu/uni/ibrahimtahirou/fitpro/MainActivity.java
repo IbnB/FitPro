@@ -88,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
                 if (menuItem.getItemId() == R.id.nav_item_help) {
                     FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
                     fragmentTransaction.replace(R.id.containerView, new HelpFragment()).commit();
+                    //Intent mapActIntent = new Intent(MainActivity.this, MapFullscreenActivity.class);
+                    //startActivity(mapActIntent);
 
 
                 }
