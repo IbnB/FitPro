@@ -37,6 +37,21 @@
             android:parentActivityName=".MainActivity"
             android:theme="@style/SetttingsTheme" />
         <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lu.uni.ibrahimtahirou.fitpro.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MultiMapDemoActivity"
+            android:label="MultiMap"
+
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/FullscreenTheme" />
+
+        <activity
             android:name=".MapFullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_map_fullscreen"
@@ -58,13 +73,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="lu.uni.ibrahimtahirou.fitpro.MainActivity" />
-        </activity>
+
     </application>
 
 </manifest>

@@ -98,6 +98,8 @@ public class MainActivity extends AppCompatActivity {
 
                 if (menuItem.getItemId() == R.id.nav_item_logout) {
 
+                    Intent mapActIntent = new Intent(MainActivity.this, MultiMapDemoActivity.class);
+                    startActivity(mapActIntent);
                     Toast.makeText(getApplicationContext(), "Logout", Toast.LENGTH_SHORT).show();
                 }
 
