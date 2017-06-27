@@ -35,6 +35,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public Location mLastLocation;
     public Marker mCurrLocationMarker;
     private UiSettings mUiSettings;
+    private String mMapping;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
