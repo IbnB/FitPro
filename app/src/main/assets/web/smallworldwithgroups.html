@@ -5,7 +5,7 @@
     <meta charset="utf-8"/>
     <title>Simple Groups Example</title>
     <style>
-        @import url(./web/style.css);
+        @import url(./itemNames/style.css);
 
         .node {
             stroke: #fff;
@@ -27,12 +27,12 @@
     </style>
 </head>
 <body>
-<a href="./web/index.html">cola.js home</a>
+<a href="./itemNames/index.html">cola.js home</a>
 <h1>Simple Groups Example</h1>
-<script src="./web/d3.v3.js"></script>
-<script src="./web/cola.min.js"></script>
-<link rel="stylesheet" href="./web/github.css">
-<script src="./web/highlight.pack.js"></script>
+<script src="./itemNames/d3.v3.js"></script>
+<script src="./itemNames/cola.min.js"></script>
+<link rel="stylesheet" href="./itemNames/github.css">
+<script src="./itemNames/highlight.pack.js"></script>
 <!--<script src="../src/rbtree.js"></script>
 <script src="../src/pqueue.js"></script>
 <script src="../src/vpsc.js"></script>
@@ -59,7 +59,7 @@
             .attr("width", width)
             .attr("height", height);
 
-        d3.json("./web/miserables.json", function (error, graph) {
+        d3.json("./itemNames/miserables.json", function (error, graph) {
             var groupMap = {};
             graph.nodes.forEach(function (v, i) {
                 var g = v.group;

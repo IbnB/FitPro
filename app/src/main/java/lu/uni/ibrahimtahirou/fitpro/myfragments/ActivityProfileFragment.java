@@ -1,6 +1,7 @@
 package lu.uni.ibrahimtahirou.fitpro.myfragments;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
@@ -14,6 +15,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -46,6 +48,8 @@ import java.util.HashMap;
 import java.util.List;
 
 import lu.uni.ibrahimtahirou.fitpro.DataParser;
+import lu.uni.ibrahimtahirou.fitpro.ListViewActivity;
+import lu.uni.ibrahimtahirou.fitpro.MyListViewActivity;
 import lu.uni.ibrahimtahirou.fitpro.R;
 
 /**
@@ -60,6 +64,8 @@ public class ActivityProfileFragment extends Fragment implements
 
     View mFragmentView;
     MapView mMapView;
+    Button btnWorkout;
+    Button btnRoute;
     private GoogleMap googleMap;
 
     //8888
@@ -74,12 +80,32 @@ public class ActivityProfileFragment extends Fragment implements
     private volatile LatLng[] mPositions;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
 
         mFragmentView = inflater.inflate(R.layout.activity_profile_layout, container, false);
 
         mMapView = (MapView) mFragmentView.findViewById(R.id.google_maps);
         mMapView.onCreate(savedInstanceState);
+
+        btnWorkout = (Button) mFragmentView.findViewById(R.id.workout);
+        btnRoute = (Button) mFragmentView.findViewById(R.id.select_route);
+        btnWorkout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //MyListViewActivity
+                Intent intent = new Intent(getActivity(), ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnRoute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //MyListViewActivity
+                Intent intent = new Intent(getActivity(), MyListViewActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // Initializing
         MarkerPoints = new ArrayList<>();
