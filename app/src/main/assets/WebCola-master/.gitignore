@@ -1,0 +1,4 @@
+node_modules/
+WebCola/compiledtypescript.js
+WebCola/doc
+**/*.js.map

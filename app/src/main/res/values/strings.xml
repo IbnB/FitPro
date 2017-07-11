@@ -1,40 +1,10 @@
 <resources>
-    <string name="app_name">FitPro</string>
-    <string name="info_txt">Application settings are listed below:</string>
-    <string name="action_settings">Settings</string>
-    <string-array name="pref_country_names">
-        <item>Finland</item>
-        <item>England</item>
-    </string-array>
-    <string-array name="pref_Wifi_scan_Interval">
-        <item>5  seconds</item>
-        <item>10 seconds</item>
-        <item>15 seconds</item>
-        <item>20 seconds</item>
-        <item>30 seconds</item>
-    </string-array>
-    <string-array name="pref_activity_scan_Interval">
-        <item>0  seconds</item>
-        <item>5  seconds</item>
-        <item>10 seconds</item>
-        <item>15 seconds</item>
-        <item>20 seconds</item>
-        <item>30 seconds</item>
-    </string-array>
-    <string-array name="pref_data_recording_Interval">
-        <item> 30 seconds</item>
-        <item> 60 seconds</item>
-        <item> 90 seconds</item>
-        <item>120 seconds</item>
-        <item>180 seconds</item>
-        <item>240 seconds</item>
-        <item>300 seconds</item>
-        <item>360 seconds</item>
-    </string-array>
-
-    <string name="title_activity_map_fullscreen">MapFullscreenActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="title_activity_maps">Map</string>
-    <string name="maps_key">AIzaSyCLvazqNOGCmQu5XauT6dRwVOcgJKBpc6U</string>
+    <string name="app_name">Fitness Trail Assistant</string>
+    <string name="title_activity_add_route">Map</string>
+    <string name="please_enter_exercise_duration">Please enter exercise duration</string>
+    <string name="please_enter_route_name">Please enter route Name</string>
+    <string name="walking_msg">You should start  walking exercise!</string>
+    <string name="running_msg">You should start running exercise!</string>
+    <string name="bike_msg">You should bike exercise !</string>
+    <string name="finished_msg">Well done you have reached your destination!</string>
 </resources>

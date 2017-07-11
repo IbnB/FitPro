@@ -1,0 +1,229 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_layout" />
+
+
+        <com.fitness.trail.assistant.ui.CustomScrollView
+            android:id="@+id/scrollMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:focusedByDefault="true"
+            android:nestedScrollingEnabled="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+
+
+                <EditText
+                    android:id="@+id/etRouteName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:hint="Route Name"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Exercises"
+                        android:textSize="@dimen/text_small" />
+
+                    <View
+                        android:layout_width="200dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@color/lineColor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llExercies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                    <!--Activity Walk-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <CheckBox
+                            android:id="@+id/cbWalk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="Walk" />
+
+                        <EditText
+                            android:id="@+id/etWalk"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical|right"
+                            android:gravity="center"
+                            android:hint="15 min"
+                            android:visibility="gone"
+                            android:inputType="number" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lineColor" />
+
+                    <!--Activity Run-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <CheckBox
+                            android:id="@+id/cbRun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="Run" />
+
+                        <EditText
+                            android:id="@+id/etRun"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical|right"
+                            android:gravity="center"
+                            android:hint="15 min"
+                            android:visibility="gone"
+                            android:inputType="number" />
+
+                    </RelativeLayout>
+
+
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lineColor" />
+
+                    <!--Activity Biking-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <CheckBox
+                            android:id="@+id/cbBike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="Bike" />
+
+                        <EditText
+                            android:id="@+id/etBike"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical|right"
+                            android:gravity="center"
+                            android:hint="15 min"
+                            android:visibility="gone"
+                            android:inputType="number" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lineColor" />
+
+                    <!--Activity resting-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <CheckBox
+                            android:id="@+id/cbRest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="Rest" />
+
+                        <EditText
+                            android:id="@+id/etRest"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical|right"
+                            android:gravity="center"
+                            android:hint="15 min"
+                            android:visibility="gone"
+                            android:inputType="number" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvExercises"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp" />
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ACTIVITY DETECTION"
+                    android:textSize="16sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/tvActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp" />
+            </LinearLayout>
+        </com.fitness.trail.assistant.ui.CustomScrollView>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fcbDone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:elevation="6dp"
+        android:src="@drawable/ic_done_white_24dp" />
+
+</android.support.design.widget.CoordinatorLayout>

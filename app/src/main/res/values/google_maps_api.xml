@@ -1,0 +1,26 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=2F:FB:84:B2:09:57:E4:52:02:D5:93:39:6D:18:E0:DA:21:6A:EF:EA%3Bcom.fitness.trail.assistant.activities
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    2F:FB:84:B2:09:57:E4:52:02:D5:93:39:6D:18:E0:DA:21:6A:EF:EA
+
+    SHA-1 certificate fingerprint:
+    2F:FB:84:B2:09:57:E4:52:02:D5:93:39:6D:18:E0:DA:21:6A:EF:EA
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyCLvazqNOGCmQu5XauT6dRwVOcgJKBpc6U
+    </string>
+</resources>
